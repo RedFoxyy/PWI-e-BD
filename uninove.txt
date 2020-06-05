@@ -1,0 +1,25 @@
+create database uninove;
+
+USE uninove;
+
+create TABLE clientes(
+    id int PRIMARY KEY AUTO_INCREMENT, 
+    nome varchar(255),
+    idade int,
+    senha varchar(50);
+
+insert into clientes(nome, idade, senha) values
+('Ruan Victor', '15', 'rvqa1512');
+
+update clientes set nome = 'Ruan Victor Anastacio'
+where id = 1;
+
+delete from clientes where id=1;
+
+ALTER TABLE clientes ADD COLUMN email varchar(255);
+ 
+UPDATE clientes set email = 'ruanvictor.qa@gmail.com'
+WHERE id = 1;
+UPDATE clientes set email = 'sofissaquino@gmail.com'
+WHERE id = 2;   
+
